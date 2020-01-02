@@ -1,4 +1,4 @@
-##Pre-Requisties:
+## Pre-Requisties:
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
@@ -7,7 +7,7 @@ nvm use 8.9.4
 npm install
 ```
 
-##Run Application
+## Run Application
 
 ```
 npm start
