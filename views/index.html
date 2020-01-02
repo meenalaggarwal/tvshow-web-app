@@ -1,0 +1,82 @@
+<html>
+
+    <head>
+        <title>Rick & Morty</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <!-- common -->
+        <!--<link rel="stylesheet" href="/stylesheets/register.css" type="text/css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="/stylesheets/base.css" type="text/css" media="all" />
+
+    </head>
+
+    <body>
+        <header id="site-header" role="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="/" rel="home">
+                            <img src="/images/logo.jpeg"  id="logo" />
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="divider"></div>
+        </header>
+        <div class="container">
+            <div class="row" id="filters">
+                <div class="col-md-2 col-xs-12">
+                    <span><b style="font-size:18px">Filters</b></span>
+                    <ul class="filter-list-box" id="species">
+                        <li><b>Species</b></li><br />
+                        <li><input type="checkbox" id="cb1" value="human" name="species" /><label class="check" for="cb1">Human</label></li><br />
+                        <li><input type="checkbox" id="cb2" value="mytholog" name="species" /><label class="check" for="cb2">Mytholog</label></li><br />
+                        <li><input type="checkbox" id="cb3" value="otherspecies" name="species" /><label class="check" for="cb3">Other Species</label></li>
+                    </ul> <br />
+
+                    <ul class="filter-list-box" id="gender">
+                        <li><b>Gender</b></li><br />
+                        <li><input type="checkbox" id="cb4" value="male" name="gender" /><label class="check" for="cb4">Male</label></li><br />
+                        <li><input type="checkbox" id="cb5" value="female" name="gender" /><label class="check" for="cb5">Female</label></li>
+                    </ul> <br />
+
+                    <ul class="filter-list-box" id="origin">
+                        <li><b>Origin</b></li><br />
+                        <li><input type="checkbox" id="cb6" value="unknown" name="origin" /><label class="check" for="cb6">Unknown</label></li><br />
+                        <li><input type="checkbox" id="cb7" value="apocalearth" name="origin" /><label class="check" for="cb7">Post-Apocalyptic Earth</label></li><br />
+                        <li><input type="checkbox" id="cb8" value="naptia4" name="origin" /><label class="check" for="cb8">Naptia 4</label></li><br />
+                        <li><input type="checkbox" id="cb9" value="otherorigin" name="origin" /><label class="check" for="cb9">Other origins</label></li>  
+                    </ul>
+                </div>
+                <div class="col-md-9 col-xs-11">
+                    <div id="sel-filters">
+                        <span style="white-space: pre;"><b style="font-size:15px;">Selected Filters</b></span>
+                        <ul></ul>
+                    </div>
+                    <div id="sort">
+                        <select style="float: right">
+                            <option value="" disabled selected>Sort by ID</option>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                    <div id="sel-characters"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!--If required for footer-->
+        </footer>
+
+        <!--scripts-->
+
+        <!-- common -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="/javascript/index.js"></script>
+
+    </body>
+
+</html>
